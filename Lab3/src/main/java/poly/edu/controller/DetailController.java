@@ -10,8 +10,7 @@ import poly.edu.model.Staff;
 public class DetailController {
 	@RequestMapping("/poly/staff-detail")
 	public String detail(Model model) {
-		Staff staff = Staff.builder().id("user@gmail.com").fullname("nguyễn văn user").level(2)
-//	.photo("staff.png")
+		Staff staff = Staff.builder().id("user@gmail.com").fullname("nguyễn văn user").level(2).photo("staff.png")
 				.build();
 		model.addAttribute("staff", staff);
 		return "/poly/staff-detail";
