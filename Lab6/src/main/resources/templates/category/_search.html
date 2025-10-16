@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form th:action="@{/category/search}" method="get"
+		style="margin-bottom: 10px;">
+		<input type="text" name="id" placeholder="Nhập ID cần tìm">
+		<button type="submit">Tìm kiếm</button>
+	</form>
+</body>
+</html>
